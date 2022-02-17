@@ -12,6 +12,10 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
     
+    /* fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@300;400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@400;600&display=swap');
+
     /* global stylings */
     * {
       margin: 0;
@@ -23,6 +27,8 @@
       background-color: hsl(257, 40%, 49%);
       background-repeat: no-repeat;
       padding: 25px 40px;
+      font-family: 'Open Sans';
+      font-weight: 400;
     }
 
     /* styling for the huddle logo */
@@ -44,14 +50,15 @@
       margin-bottom: 70px;
     }
     #description h2 {
-      margin: auto 10px 20px;
-      /* add font family */
+      margin: auto 20px 20px;
+      font-family: 'Poppins';
+      font-weight: 400;
+      line-height: 35px;
     }
     #description p {
       line-height: 25px;
-        /* may need to adjust */
-      /* add font family */
       margin-bottom: 40px;
+      letter-spacing: 1px;
     }
     #description a {
       text-decoration: none;
@@ -60,17 +67,27 @@
       cursor: pointer;
       border-radius: 16px;
     }
+    #description a:hover {
+      background-color: hsl(300, 69%, 71%);
+      color: white;
+    }
 
     /* styling for the social media logos */
    #social-icons {
      display: flex;
-     justify-content: space-evenly;
-     margin: auto 50px;
+     justify-content: space-around;
+     width: 120px;
+     margin: auto 28%;
    }
    .social {
     border: 1px solid white;
     border-radius: 30px;
-    padding: 10px;
+    padding: 5px;
+    width: 30px;
+   }
+   #social-icons img:hover {
+     background-color: hsl(300, 69%, 71%);
+     border: hsl(300, 69%, 71%);
    }
     
     footer {
