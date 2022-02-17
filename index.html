@@ -8,25 +8,100 @@
   
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    
+    /* global stylings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-image: url(images/bg-mobile.svg);
+      background-color: hsl(257, 40%, 49%);
+      background-repeat: no-repeat;
+      padding: 25px 40px;
+    }
+
+    /* styling for the huddle logo */
+    header img {
+      width: 130px;
+      margin-bottom: 60px;
+    }
+
+    /* styling for the big center img */
+    #mockup {
+      width: 80vw;
+      margin-bottom: 70px;
+    }
+
+    /* styling for header, p and button section */
+    #description {
+      text-align: center;
+      color: white;
+      margin-bottom: 70px;
+    }
+    #description h2 {
+      margin: auto 10px 20px;
+      /* add font family */
+    }
+    #description p {
+      line-height: 25px;
+        /* may need to adjust */
+      /* add font family */
+      margin-bottom: 40px;
+    }
+    #description a {
+      text-decoration: none;
+      background-color: white;
+      padding: 10px 70px;
+      cursor: pointer;
+      border-radius: 16px;
+    }
+
+    /* styling for the social media logos */
+   #social-icons {
+     display: flex;
+     justify-content: space-evenly;
+     margin: auto 50px;
+   }
+   .social {
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px;
+   }
+    
+    footer {
+      margin-top: 50px;
+    }
   </style>
 </head>
 <body>
+  <header>
+    <img src="images/logo.svg" alt="text bubble beside huddle">
+  </header>
 
-  Build The Community Your Fans Will Love
+  <img id="mockup" src="images/illustration-mockups.svg" alt="mockup of a website">
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
+  <section id="description">
+    <h2>Build The Community Your Fans Will Love</h2>
+    <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+      Create connections with your users as you engage in genuine discussion. </p>
+    <a href="#">Register</a>  
+  </section>
 
-  Register
+  <section id="social-icons">
+    <a href="#"><img class="social" src="socials/facebook-24.png" alt=""></a>
+    <a href="#"><img class="social" src="socials/twitter-24.png" alt=""></a>
+    <a href="#"><img class="social" src="socials/instagram-24.png" alt=""></a>
+  </section>
 
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Terrell Tinsley</a>.
     </p>
   </footer>
 </body>
