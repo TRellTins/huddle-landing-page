@@ -52,7 +52,7 @@
     #description h2 {
       margin: auto 20px 20px;
       font-family: 'Poppins';
-      font-weight: 400;
+      font-weight: 600;
       line-height: 35px;
     }
     #description p {
@@ -73,41 +73,79 @@
     }
 
     /* styling for the social media logos */
-   #social-icons {
-     display: flex;
-     justify-content: space-around;
-     width: 120px;
-     margin: auto 28%;
-   }
-   .social {
-    border: 1px solid white;
-    border-radius: 30px;
-    padding: 5px;
-    width: 30px;
-   }
-   #social-icons img:hover {
-     background-color: hsl(300, 69%, 71%);
-     border: hsl(300, 69%, 71%);
-   }
+    #social-icons {
+      display: flex;
+      justify-content: space-around;
+      width: 120px;
+      margin: auto 28%;
+    }
+    .social {
+      border: 1px solid white;
+      border-radius: 30px;
+      padding: 5px;
+      width: 30px;
+    }
+    #social-icons img:hover {
+      background-color: hsl(300, 69%, 71%);
+      border: hsl(300, 69%, 71%);
+    }
     
     footer {
       margin-top: 50px;
     }
+
+    /* desktop styling  */
+    @media only screen and (min-width: 1440px)  {
+      /* global styling */
+      body {
+        background-image: url(images/bg-desktop.svg);
+        background-size: contain;
+      }
+      main {
+        display: flex;
+        
+      }
+
+      /* styling header */
+      #mockup {
+        width: 50vw;
+      }
+
+      /* styling description section */
+      #description {
+        width: 50vw;
+        text-align: left;
+        margin-top: 70px;
+        margin-left: 50px;
+      }
+      #description h2 {
+        padding-right: 650px;
+        margin-left: 0;
+      }
+      #description p {
+        padding-right: 435px;
+      }
+
+      /* styling social icons */
+    }
   </style>
 </head>
 <body>
+
   <header>
     <img src="images/logo.svg" alt="text bubble beside huddle">
   </header>
 
-  <img id="mockup" src="images/illustration-mockups.svg" alt="mockup of a website">
+  <main>
+    <img id="mockup" src="images/illustration-mockups.svg" alt="mockup of a website">
 
-  <section id="description">
-    <h2>Build The Community Your Fans Will Love</h2>
-    <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-      Create connections with your users as you engage in genuine discussion. </p>
-    <a href="#">Register</a>  
-  </section>
+    <section id="description">
+      <h2>Build The Community Your Fans Will Love</h2>
+      <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+        Create connections with your users as you engage in genuine discussion. </p>
+      <a href="#">Register</a>  
+    </section>
+  </main> 
 
   <section id="social-icons">
     <a href="#"><img class="social" src="socials/facebook-24.png" alt=""></a>
