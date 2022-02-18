@@ -13,8 +13,8 @@
     .attribution a { color: hsl(228, 45%, 44%); }
     
     /* fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@300;400;600&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit:wght@400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
     /* global stylings */
     * {
@@ -49,11 +49,12 @@
       color: white;
       margin-bottom: 70px;
     }
-    #description h2 {
+    #description h1 {
       margin: auto 20px 20px;
       font-family: 'Poppins';
       font-weight: 600;
       line-height: 35px;
+      letter-spacing: 1px;
     }
     #description p {
       line-height: 25px;
@@ -63,9 +64,9 @@
     #description a {
       text-decoration: none;
       background-color: white;
-      padding: 10px 70px;
+      padding: 15px 70px;
       cursor: pointer;
-      border-radius: 16px;
+      border-radius: 30px;
     }
     #description a:hover {
       background-color: hsl(300, 69%, 71%);
@@ -99,34 +100,48 @@
       /* global styling */
       body {
         background-image: url(images/bg-desktop.svg);
-        background-size: contain;
+        background-size: cover;
+        padding: 80px 50px 50px 200px;
       }
+
+      /* header img needs to be bigger */
+      header img {
+        width: 190px;
+      }
+
+      /* allows me to split the #mockup and #description into two sections */
       main {
         display: flex;
-        
+        justify-content: space-between;
+        margin-top: 85px;
+        width: 90%;
       }
-
-      /* styling header */
-      #mockup {
-        width: 50vw;
-      }
-
-      /* styling description section */
+      
+      
+      /* description styling */
       #description {
-        width: 50vw;
         text-align: left;
+        margin-left: 90px;
         margin-top: 70px;
-        margin-left: 50px;
       }
-      #description h2 {
-        padding-right: 650px;
+      #description h1 {
+        font-size: 34px;
+        font-weight: 400;
         margin-left: 0;
+        width: 400px;
+        word-spacing: 3px;
+        line-height: 50px;
       }
       #description p {
-        padding-right: 435px;
+        width: 460px;
       }
-
-      /* styling social icons */
+  
+      /* social-icons moved to the left of the screen */
+      #social-icons {
+        margin: 0;
+        position: relative;
+        left: 89%;
+      }
     }
   </style>
 </head>
@@ -140,10 +155,11 @@
     <img id="mockup" src="images/illustration-mockups.svg" alt="mockup of a website">
 
     <section id="description">
-      <h2>Build The Community Your Fans Will Love</h2>
+      <h1>Build The Community Your Fans Will Love</h1>
       <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
         Create connections with your users as you engage in genuine discussion. </p>
       <a href="#">Register</a>  
+      
     </section>
   </main> 
 
